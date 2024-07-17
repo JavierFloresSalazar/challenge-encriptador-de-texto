@@ -8,17 +8,35 @@
 </head>
 <body>
     <header>
-        <div>
-            <img src="images/Logo.png" alt="Logo de alura">
-            <h1>ENCRIPTADOR DE TEXTO</h1>
-        </div>
-        <main>
-            <section>
-                <footer>
-                    <p>Desarrollado por Javier Flores</p>
-                </footer>
-            </section>
-        </main>
+        
     </header>
+        <main>
+            <div class="div-principal">
+                <div class="div-lef">
+                    <img class="logo-alura" src="images/Logo.png" alt="Logo de alura">
+                </div>
+                <div class="div-center">
+                    <h1>ENCRIPTADOR DE TEXTO</h1>
+                <textarea class="textarea-texto" name="texto" rows="10" cols="50" placeholder="Ingrese el texto aqui"></textarea>
+                <div class="div-mensaje">
+                    <img class="signo" src="images/bi_exclamation-circle-fill.png" alt="Signo de exclamacion">
+                    <p>Solo letras minusculas y sin acento</p>
+                </div>
+                <div class="div-buttons">
+                    <button onclick="encriptar()" class="button">Encriptar </button>
+                    <button class="button">Desencriptar</button>
+                </div>
+                </div>
+                <div id="div-right">
+                    <img id="muñeco" src="images/Muñeco.png" alt="Imagen de muñeco con una lupa">
+                    <p class="mensaje-negritas">Ningun mensaje fue encontrado</p>
+                    <p class="mensaje">Ingresa el mensaje que deseas encriptar o desencriptar</p>
+                </div>
+            </div>
+        </main>
+    <footer>
+        <p>Desarrollado por Javier Flores  ||  Software Enginner  ||  +52 392 128 0337  ||  javierflores.salazar010@gmail.com</p>
+    </footer>
+    <script src="app.js"></script>
 </body>
 </html>

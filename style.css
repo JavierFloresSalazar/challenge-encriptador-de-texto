@@ -1,12 +1,98 @@
 
 footer{
-    background-color: blue;
+    background-color: #83ACB0;
+    height: 30px;
+    text-align: center;
+    margin-top: 2%;
 }
 
-div{
+body{
+    background-color: #B1E0E6 ;
+}
+
+.logo-alura{
+    width: 120px;
+    height: 48px;
+}
+
+.div-principal{ 
     display: flex;
+    flex-direction: row;
+}
+
+.div-left{
+    display: flex;
+    flex-direction: column;
+}
+
+.div-center{
+    display: flex;
+    flex-direction: column;
+}
+
+#div-right{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    margin-left: 7%;
+    border-radius: 5%;
+    width: 28%;
+    height: 500px;
+    margin-top: 2%;
 }
 
 h1{
-    padding-left: 25%;
+    padding-left: 20%;
 }
+
+.mensaje-negritas{
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.mensaje{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.textarea-texto{
+    background-color: #B1E0E6;
+    width:700px;
+    height: 340px;
+}
+
+.div-buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 6%;
+}
+
+.div-mensaje{
+    display: flex;
+    flex-direction: row;
+}
+
+.signo{
+    margin-top: 20px;
+    margin-right: 5px;
+    width: 10px;
+    height: 10px;
+}
+
+.button{
+    background-color: #4CAF50; /* Verde */
+    width: 150px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0.3s;
+}
+
