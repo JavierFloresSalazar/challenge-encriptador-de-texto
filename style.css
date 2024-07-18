@@ -1,13 +1,50 @@
 
-footer{
-    background-color: #83ACB0;
-    height: 30px;
-    text-align: center;
-    margin-top: 2%;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400&family=Playfair+Display:wght@700&display=swap');
+
+
+:root {
+    --color-primario: #2c3e50;
+    --color-secundario: #bdc3c7;
+    --color-terciario: #2980b9;
+    --color-fondo: #ecf0f1;
+    --color-texto: #34495e;
 }
 
+
+footer {
+    background-color: var(--color-primario);
+    height: 60px;
+    text-align: center;
+    padding: 5px;
+    margin-top: 0.5%;
+    font-family: 'Arial', sans-serif;
+    color: var(--color-secundario);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    margin-left: 5%;
+}
+
+footer .social-icons {
+    display: flex;
+    gap: 10px;
+    margin-right: 5%;
+}
+
+footer .social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+
 body{
-    background-color: #B1E0E6 ;
+    background-color:var(--color-fondo) ;
+    color: var(--color-texto);
 }
 
 .logo-alura{
@@ -34,11 +71,11 @@ body{
     width: 100%;
     height: 13%;
     border-radius: 5%;
-    background-color: aliceblue;
+    background-color: var(--color-secundario);
 }
 
 #div-principal-mensaje{
-    background-color: aliceblue;
+    background-color: var(--color-secundario);
     
     margin-left: 7%;
     border-radius: 5%;
@@ -48,7 +85,7 @@ body{
 }
 
 #div-right{
-    background-color: aliceblue;
+    background-color: var(--color-secundario);
     display: flex;
     flex-direction: column;
     margin-left: 7%;
@@ -59,7 +96,9 @@ body{
 }
 
 h1{
+    color:var(--color-primario);
     padding-left: 20%;
+    font-family: 'Lora', serif;
 }
 
 #mensaje-negritas{
@@ -74,9 +113,11 @@ h1{
 }
 
 .textarea-texto{
-    background-color: #B1E0E6;
+    background-color: var(--color-secundario);
+    border: 1px solid var(--color-primario);
     width:700px;
     height: 340px;
+    color: var(--color-texto);
 }
 
 .div-buttons{
@@ -98,10 +139,10 @@ h1{
 }
 
 .button{
-    background-color: #4CAF50; /* Verde */
+    background-color:var(--color-terciario);
     width: 150px;
     border: none;
-    color: white;
+    color: var(--color-secundario);
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -114,11 +155,11 @@ h1{
 }
 
 #copiar{
-    background-color: yellowgreen;
+    background-color:var(--color-primario);
     width: 100px;
     height: 40px;
     border: none;
-    color: white;
+    color: var(--color-secundario);
     text-align: center;
     text-decoration: none;
     margin-left: 140px;
@@ -129,5 +170,35 @@ h1{
     transition: background-color 0.3s;
 }
 
+#toast {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+    padding: 16px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
 
+#toast.show {
+    visibility: visible;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
 

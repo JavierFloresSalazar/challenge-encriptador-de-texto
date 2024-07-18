@@ -34,7 +34,6 @@ function encriptar(){
 function desencriptar(){
     let textoEncriptar = document.querySelector("textarea").value;
     let mostrar = document.getElementById("div-right");
-    let regresar = document.getElementById("div-principal-mensaje");
     let copiar = document.getElementById("copiar");
     let imagen = document.getElementById("muñeco");
     var soloMinusculas = /^[a-z\s]*$/.test(textoEncriptar);
@@ -64,4 +63,19 @@ function desencriptar(){
         copiar.style.display = "none";
         imagen.style.display = "block";
     }
+}
+
+async function buttonCopiar() {
+    var div = document.getElementById("div-right");
+    var texto = div.textContent;
+    try {
+        await navigator.clipboard.writeText(texto);
+        var toast = document.getElementById("toast");
+        toast.className = "toast show";
+        setTimeout(function(){ toast.className = toast.className.replace("show", ""); }, 3000);
+    } catch (err) {
+        alert("Error al copiar el texto");
+    }
+
+    
 }
