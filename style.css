@@ -13,9 +13,9 @@
 
 footer {
     background-color: var(--color-primario);
-    height: 60px;
+    height: 3.75rem;
     text-align: center;
-    padding: 5px;
+    padding: 0.3rem;
     margin-top: 0.5%;
     font-family: 'Arial', sans-serif;
     color: var(--color-secundario);
@@ -26,30 +26,31 @@ footer {
 
 footer p {
     margin: 0;
-    font-size: 14px;
+    font-size: 1rem;
     margin-left: 5%;
 }
 
 footer .social-icons {
     display: flex;
-    gap: 10px;
+    gap: 0.5rem;
     margin-right: 5%;
 }
 
 footer .social-icons img {
-    width: 24px;
-    height: 24px;
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
 
 body{
     background-color:var(--color-fondo) ;
     color: var(--color-texto);
+    font-size: 1rem;
 }
 
 .logo-alura{
-    width: 120px;
-    height: 48px;
+    width: 5rem;
+    height: auto;
 }
 
 .div-principal{ 
@@ -65,11 +66,13 @@ body{
 .div-center{
     display: flex;
     flex-direction: column;
+    max-width: 100%;
+    padding: 0 1rem;
 }
 
 #div-mostrar-mensaje{
     width: 100%;
-    height: 13%;
+    height: auto;
     border-radius: 5%;
     background-color: var(--color-secundario);
 }
@@ -80,7 +83,7 @@ body{
     margin-left: 7%;
     border-radius: 5%;
     width: 28%;
-    height: 500px;
+    height: auto;
     margin-top: 2%;
 }
 
@@ -88,10 +91,10 @@ body{
     background-color: var(--color-secundario);
     display: flex;
     flex-direction: column;
-    margin-left: 7%;
+    margin-left: 2rem;
     border-radius: 5%;
     width: 80%;
-    height: 400px;
+    height: 26.8rem;
     margin-top: 2%;
 }
 
@@ -99,24 +102,28 @@ h1{
     color:var(--color-primario);
     padding-left: 20%;
     font-family: 'Lora', serif;
+    font-size: 2rem;
 }
 
 #mensaje-negritas{
     font-weight: bold;
     text-align: center;
+    font-size: 1rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 #mensaje{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
+    font-size: 1rem;
 }
 
 .textarea-texto{
     background-color: var(--color-secundario);
     border: 1px solid var(--color-primario);
-    width:700px;
-    height: 340px;
+    width:43.75rem;
+    height: 20rem;
+    font-size: 1rem;
     color: var(--color-texto);
 }
 
@@ -124,6 +131,8 @@ h1{
     display: flex;
     flex-direction: row;
     gap: 6%;
+    justify-content: center;
+    margin-top: 1rem;
 }
 
 .div-mensaje{
@@ -132,23 +141,23 @@ h1{
 }
 
 .signo{
-    margin-top: 20px;
-    margin-right: 5px;
-    width: 10px;
-    height: 10px;
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+    width: 1rem;
+    height: 1rem;
 }
 
 .button{
     background-color:var(--color-terciario);
-    width: 150px;
+    width: 9rem;
     border: none;
     color: var(--color-secundario);
-    padding: 15px 32px;
+    padding: 1rem 2rem;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
+    font-size: 1rem;
+    margin: 0.5rem;
     cursor: pointer;
     border-radius: 12px;
     transition: background-color 0.3s;
@@ -156,15 +165,15 @@ h1{
 
 #copiar{
     background-color:var(--color-primario);
-    width: 100px;
-    height: 40px;
+    width: 6rem;
+    height: 2.5rem;
     border: none;
     color: var(--color-secundario);
     text-align: center;
     text-decoration: none;
-    margin-left: 140px;
+    margin-left: 8.7rem;
     
-    font-size: 16px;
+    font-size: 1rem;
     cursor: pointer;
     border-radius: 12px;
     transition: background-color 0.3s;
@@ -172,8 +181,8 @@ h1{
 
 #toast {
     visibility: hidden;
-    min-width: 250px;
-    margin-left: -125px;
+    min-width: 15.6rem;
+    margin-left: -7.8rem;
     background-color: #333;
     color: #fff;
     text-align: center;
@@ -181,9 +190,9 @@ h1{
     position: fixed;
     z-index: 1;
     left: 50%;
-    bottom: 30px;
-    font-size: 17px;
-    padding: 16px;
+    bottom: 2rem;
+    font-size: 1rem;
+    padding: 1rem;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -194,11 +203,58 @@ h1{
 
 @keyframes fadein {
     from {bottom: 0; opacity: 0;}
-    to {bottom: 30px; opacity: 1;}
+    to {bottom: 2rem; opacity: 1;}
 }
 
 @keyframes fadeout {
-    from {bottom: 30px; opacity: 1;}
+    from {bottom: 2rem; opacity: 1;}
     to {bottom: 0; opacity: 0;}
 }
 
+@media (max-width: 768px) {
+    .div-principal {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .div-center, #div-principal-mensaje, #div-right {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        height: auto;
+    }
+
+    h1 {
+        padding-left: 0;
+        font-size: 1.5rem;
+    }
+
+    .textarea-texto {
+        width: 90%;
+        height: 15rem;
+    }
+
+    .button {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    #copiar {
+        width: 90%;
+        margin-left: 0;
+    }
+
+    footer {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+    }
+
+    footer p {
+        margin: 0.5rem 0;
+    }
+
+    footer .social-icons {
+        margin-top: 0.5rem;
+    }
+}
