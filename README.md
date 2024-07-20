@@ -10,7 +10,7 @@ El **Encriptador de Texto** es una aplicación web desarrollada en HTML, CSS y J
 - **Desencriptar Texto**: Convierte el texto encriptado de vuelta a su versión original.
 - **Interfaz Intuitiva**: Diseño limpio y amigable que facilita la interacción del usuario.
 
-  ![Encriptador de Texto](./images/screenshot.png)
+  ![Encriptador de Texto](./images/screenshot.PNG)
 
 ## Tecnologías Utilizadas
 
