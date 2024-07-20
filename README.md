@@ -36,3 +36,8 @@ El **Encriptador de Texto** es una aplicación web desarrollada en HTML, CSS y J
 **Contacto**
 Creador: Javier Flores Salazar
 Correo: javierflores.salazar010@gmail.com
+
+## Autores
+
+[<img src="https://avatars.githubusercontent.com/u/148264015?v=4" width=115><br><sub>Javier Flores</sub>](https://github.com/JavierFloresSalazar)
+
