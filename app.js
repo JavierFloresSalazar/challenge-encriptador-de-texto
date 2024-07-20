@@ -7,8 +7,6 @@ function encriptar(){
 
     if(!soloMinusculas){
         alert("solo debes ingresar minusculas sin acentos");
-        let mitext = document.querySelector("textarea");
-            mitext.value = "";
         mostrar.innerHTML = '<img src="images/Muñeco.png" alt="Descripción de la imagen">' +  
         '<p id="mensaje-negritas">Ningun mensaje fue encontrado</p>' + 
         '<p id="mensaje">Ingresa el mensaje que deseas encriptar o desencriptar</p>';
@@ -41,8 +39,6 @@ function desencriptar(){
     
     if(!soloMinusculas){
         alert("solo debes ingresar minusculas sin acentos");
-        let mitext = document.querySelector("textarea");
-            mitext.value = "";
         mostrar.innerHTML = '<img src="images/Muñeco.png" alt="Descripción de la imagen">' +  
         '<p id="mensaje-negritas">Ningun mensaje fue encontrado</p>' + 
         '<p id="mensaje">Ingresa el mensaje que deseas encriptar o desencriptar</p>';
