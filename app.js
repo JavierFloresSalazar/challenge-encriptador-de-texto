@@ -29,6 +29,7 @@ function encriptar(){
         copiar.style.display = "none";
         imagen.style.display = "block";
     }
+
 }
 
 function desencriptar(){
